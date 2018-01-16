@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26430.12
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OnlineShopping", "OnlineShopping\OnlineShopping.csproj", "{A47EBF87-47BA-475A-ABD5-1BE2865CDB80}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataAccesLayer(DAL)", "DataAccesLAYER(DAL)\DataAccesLayer(DAL).csproj", "{0085EF5A-20A9-4896-85BF-3E0D7D7C4504}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Service", "Service\Service.csproj", "{8C4606D5-2C3C-4A3B-BB20-8ECC35C8CDB4}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A47EBF87-47BA-475A-ABD5-1BE2865CDB80}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A47EBF87-47BA-475A-ABD5-1BE2865CDB80}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A47EBF87-47BA-475A-ABD5-1BE2865CDB80}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A47EBF87-47BA-475A-ABD5-1BE2865CDB80}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0085EF5A-20A9-4896-85BF-3E0D7D7C4504}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0085EF5A-20A9-4896-85BF-3E0D7D7C4504}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0085EF5A-20A9-4896-85BF-3E0D7D7C4504}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0085EF5A-20A9-4896-85BF-3E0D7D7C4504}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8C4606D5-2C3C-4A3B-BB20-8ECC35C8CDB4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8C4606D5-2C3C-4A3B-BB20-8ECC35C8CDB4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8C4606D5-2C3C-4A3B-BB20-8ECC35C8CDB4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8C4606D5-2C3C-4A3B-BB20-8ECC35C8CDB4}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

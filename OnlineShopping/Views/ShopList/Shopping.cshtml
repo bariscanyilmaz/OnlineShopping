@@ -1,0 +1,44 @@
+﻿@model List<DataAccesLAYER_DAL_.Model.Product>
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Shopping</title>
+    <link href="~/Content/bootstrap.css" rel="stylesheet" />
+</head>
+@using (Html.BeginForm("Buy", "ShopList", FormMethod.Post, new { enctype = "multipart/form-data" }))
+{ 
+@Html.AntiForgeryToken()
+<body>
+    <div class="container">
+        <div class="jumbotron">
+            <h1>Açık Akademi Online Alışveriş</h1>
+            <input type="submit" class="btn bg-success"  value="Satın Al"/>
+        </div>
+        <table class="table">
+            <thead>
+                <tr class="table-info"><th>Satın Al</th><th>Ad</th><th>Resim</th><th>Fiyat</th></tr>
+            </thead>
+            <tbody>
+                @{ foreach (var item in Model)
+                    {
+                        <tr>
+                            <td><input type="checkbox" id="@item.id" name="@item.id" value="@item.id" /></td>
+                            <td>@item.Name</td>
+                            <td><img src="~/Images/@item.Image"  height="100" width="200" alt="@item.Name" /></td>
+                            <td>@(item.Price)$</td>
+                        </tr>
+                        }}
+            </tbody>
+        </table>
+    </div>
+    <script src="~/Scripts/jquery-3.2.1.js"></script>
+    <script src="~/Scripts/bootstrap.min.js"></script>
+</body>
+}
+</html>
